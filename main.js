@@ -9,14 +9,17 @@ function startScene() {
   const title= document.createElement ("h1");
   const p = document.createElement("p");
   const button = document.createElement ("button");
+  const div= document.createElement ("div");
   
   button.textContent ="Starta";
   title.textContent =" Hjälp Otis at hitta hem";
   p.textContent= " Den 2-åriga cocker spaniels Otis är fast I trollskogen och kan inte hitta hem, du måste hjälpa honom! ";
+  p.classList= "regular font";
   button.onclick= nextScene ;
+  title.classList= "Regular font";
 
 
-  document.body.append(title,p, button);
+  document.body.append(div,title,p, button,);
 }
 
 function nextScene() {
@@ -26,6 +29,7 @@ function nextScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " Du hittar otis ensam under ett magiskt träd vad gör du för att få honom att gå med dig? ";
   title.textContent =" hej";
@@ -34,7 +38,7 @@ function nextScene() {
   
   button.onclick= thirdScene;
   button2.onclick=middleScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 }
 
 function thirdScene() {
@@ -44,6 +48,7 @@ function thirdScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " Otis tar godiset och bär den med sig nöjt. När ni gått en bit kommer ni till en sjö, men hur ska ni ta er förbi den? ";
   title.textContent =" titel 2";
@@ -52,7 +57,7 @@ function thirdScene() {
   
   button.onclick= fourthScene;
   button2.onclick=seventhScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 }
 
 function middleScene() {
@@ -62,6 +67,7 @@ function middleScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   //p.textContent= "Vattnet är mörkt och kallt men efter en stunds simmande kommer ni över sjön. Där står en ekorre som blir livrädd när den får se er. När ekorren sedan flyr springer Otis efter. Vad gör du? ";
   title.textContent =" hej";
@@ -70,7 +76,7 @@ function middleScene() {
   
   button.onclick= fifthScene;
   button2.onclick=seventhScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 
 }
 
@@ -81,6 +87,7 @@ function fourthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= "Vattnet är mörkt och kallt men efter en stunds simmande kommer ni över sjön. Där står en ekorre som blir livrädd när den får se er. När ekorren sedan flyr springer Otis efter. Vad gör du? ";
   title.textContent =" hej";
@@ -89,7 +96,7 @@ function fourthScene() {
   
   button.onclick=fifthScene;
   button2.onclick=sixthScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 
 }
 
@@ -100,13 +107,14 @@ function fifthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= "Du springer och springer men hittar inte Otis. Till slut kommer du tillbaka till det magiska trädet igen, och ni får helt enkelt ";
   title.textContent =" hej";
   button.textContent ="Börja om";
   
   button.onclick= nextScene;
-  document.body.append(title, p, button);
+  document.body.append(div,title, p, button);
 
 }
 
@@ -117,6 +125,8 @@ function sixthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
+  
 
   p.textContent= " Efter en stund kommer otis tillbaka och ni går vidare. Och kommer till ett magiskt hus. Vad gör ni? ";
   title.textContent =" hej";
@@ -125,7 +135,7 @@ function sixthScene() {
   
   button.onclick=tenthScene;
   button2.onclick=ninthScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 
 }
 function seventhScene() {
@@ -135,6 +145,7 @@ function seventhScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " När ni är halvvägs runt sjön står ett troll mitt i vägen. Han säger att han inte tänker släppa förbi er om ni inte ger honom något ";
   title.textContent =" h";
@@ -142,7 +153,7 @@ function seventhScene() {
   button2.textContent="";
   
   button.onclick= eightScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 
 }
 function eightScene() {
@@ -152,6 +163,7 @@ function eightScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " Trollet släpper förbi er och ni har nu kommit förbi sjön. Längre fram ser ni ett magiskt hus. Vad gör ni?";
   title.textContent =" hej";
@@ -160,7 +172,7 @@ function eightScene() {
   
   button.onclick=tenthScene;
   button2.onclick=ninthScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(div,title, p, button, button2);
 
 }
 function ninthScene() {
@@ -170,6 +182,7 @@ function ninthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " När ni gått runt huset ser ni den stora vägen som leder hem till tryggheten. Tack för att du hjälpte Otis komma hem! ";
   title.textContent =" hej";
@@ -177,7 +190,7 @@ function ninthScene() {
  
   
   button.onclick= startScene;
-  document.body.append(title, p, button);
+  document.body.append(div,title, p, button);
 
 }
 function tenthScene() {
@@ -187,6 +200,7 @@ function tenthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " När ni kommer in i huset ser ni att det är fullt av guld och diamanter. Ni plockar på er så mycket ni kan innan ni hör ett ljud och får se ett argt troll. Nu finns det bara en sak att göra ";
   title.textContent =" hej";
@@ -194,7 +208,7 @@ function tenthScene() {
  
   
   button.onclick= eleventhScene;
-  document.body.append(title, p, button);
+  document.body.append(div,title, p, button);
 
 }
 
@@ -205,6 +219,7 @@ function eleventhScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
+  const div= document.createElement ("div");
 
   p.textContent= " Ni springer så snabbt ni kan och är äntligen ute ur trollskogen. Du hjälpte inte bara otis att komma hem, nu är ni rika också! ";
   title.textContent =" Hej";
@@ -212,6 +227,6 @@ function eleventhScene() {
  
   
   button.onclick=startScene;
-  document.body.append(title, p, button);
+  document.body.append(div,title, p, button);
 
 }
