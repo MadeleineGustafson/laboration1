@@ -1,4 +1,4 @@
-/** Scene leads back to beginning */
+/** Scene where button leads back to beginning */
 function fifthScene() {
     document.body.innerHTML=("");
   
@@ -14,7 +14,7 @@ function fifthScene() {
   
   }
   
-  /** Scene that leads to diffrent paths */
+  /** Scene with two buttons that leads to diffrent paths */
   
   function sixthScene() {
     document.body.innerHTML=("");
@@ -36,7 +36,7 @@ function fifthScene() {
   
   }
   
-  /** Troll scene with one option */
+  /** Troll scene with one button */
   function seventhScene() {
     document.body.innerHTML=("");
   
@@ -54,7 +54,7 @@ function fifthScene() {
     document.body.append(troll, p, button);
   
   }
-   /** Scene with two options that leads to two diffrent end scenes */
+   /** Scene with two buttonsthat leads to two diffrent end scenes */
   
   function eightScene() {
     document.body.innerHTML=("");

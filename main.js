@@ -66,7 +66,8 @@ function nextScene() {
   button2.onclick=middleScene;
   document.body.append(title2, p, button, button2);
 }
-/**  Lake scene two options leads to diffrent paths */
+
+/**  Lake scene two buttons leads to diffrent paths */
 function thirdScene() {
  document.body.innerHTML=("");
 
