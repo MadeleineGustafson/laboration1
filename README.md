@@ -5,5 +5,5 @@ Word based adventure where you help Otis get out of the forest by navigating wit
 
 by Madeleine Gustafsson 
 
-[Klicka här för länk](https://madeleinegustafson.github.io/laboration1/)
+[Click for link](https://madeleinegustafson.github.io/laboration1/)
 
