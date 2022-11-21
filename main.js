@@ -12,7 +12,8 @@ function startScene() {
   const title= document.createElement ("h1");
   const p = document.createElement("p");
   const button = document.createElement ("button");
-  //const div= document.createElement ("div");
+  const div= document.createElement ("div");
+
   button.textContent= "Klar";
     button.onclick = function () {
       userName=input.value 
@@ -27,7 +28,7 @@ function startScene() {
   title.classList= "Regular font";
 
   document.body.innerHTML=(" ");
-  document.body.append(title,p, button,input);
+  document.body.append(title,p, button,input, div);
 }
 
 /** Welcome scene - starting the game */
@@ -38,14 +39,10 @@ function welcomeScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
 
-  
   button.textContent ="Start";
   title.textContent =userName+ "! You must help Otis!";
   p.textContent=" The 2-year-old cocker spaniel Otis is stuck in the enchanted forest and can't find his way home, you have to help him! ";
-  p.classList= "regular font";
   button.onclick= nextScene ;
-
-  title.classList= "Regular font";
 
   document.body.innerHTML=(" ");
   document.body.append(title,p, button,);
@@ -97,7 +94,7 @@ function middleScene() {
   const title= document.createElement ("h1");
   const p = document.createElement("p");
   const button = document.createElement ("button");
-  const button2=document.createElement ("button");
+  
   const div= document.createElement ("div");
 
   p.textContent= "Woops! Looks like Otis does'nt want to join you. Looks like you newwd to offer him some candy anyway.. ";
@@ -106,7 +103,7 @@ function middleScene() {
  
   
   button.onclick= thirdScene;
-  document.body.append(div,title, p, button, button2);
+  document.body.append(div,title, p, button);
 
 }
 /** Swimming scene leas to two options */
