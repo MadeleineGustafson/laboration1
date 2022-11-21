@@ -1,25 +1,54 @@
 window.addEventListener("DOMContentLoaded", main);
 
+let userName= "";
+
 function main() {
   startScene();
 }
 
+/** First scene- gets username */
 function startScene() {
-  document.body.innerHTML=("");
+  const input =document.createElement ("input");
   const title= document.createElement ("h1");
   const p = document.createElement("p");
   const button = document.createElement ("button");
-  const div= document.createElement ("div");
-  
-  button.textContent ="Starta";
-  title.textContent =" Hjälp Otis at hitta hem";
-  p.textContent= " Den 2-åriga cocker spaniels Otis är fast I trollskogen och kan inte hitta hem, du måste hjälpa honom! ";
+  //const div= document.createElement ("div");
+  button.textContent= "Klar";
+    button.onclick = function () {
+      userName=input.value 
+      welcomeScene() ;
+     }
+
+  title.textContent ="Hello!";
+  p.textContent= "Please write your name below";
   p.classList= "regular font";
-  button.onclick= nextScene ;
+  
+
   title.classList= "Regular font";
 
+  document.body.innerHTML=(" ");
+  document.body.append(title,p, button,input);
+}
 
-  document.body.append(div,title,p, button,);
+/** Welcome scene - starting the game */
+
+function welcomeScene() {
+
+  const title= document.createElement ("h1");
+  const p = document.createElement("p");
+  const button = document.createElement ("button");
+
+  
+  button.textContent ="Start";
+  title.textContent =userName+ "! You must help Otis!";
+  p.textContent=" The 2-year-old cocker spaniel Otis is stuck in the enchanted forest and can't find his way home, you have to help him! ";
+  p.classList= "regular font";
+  button.onclick= nextScene ;
+
+  title.classList= "Regular font";
+
+  document.body.innerHTML=(" ");
+  document.body.append(title,p, button,);
 }
 
 function nextScene() {
@@ -29,16 +58,15 @@ function nextScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
-  const div= document.createElement ("div");
 
-  p.textContent= " Du hittar otis ensam under ett magiskt träd vad gör du för att få honom att gå med dig? ";
+  p.textContent= " You find otis alone under a magic tree what do you do to get him to join you? ";
   title.textContent =" hej";
-  button.textContent ="Ge godis";
-  button2.textContent="Ropa på honom";
+  button.textContent ="Offer candy";
+  button2.textContent="Call on him";
   
   button.onclick= thirdScene;
   button2.onclick=middleScene;
-  document.body.append(div,title, p, button, button2);
+  document.body.append(title, p, button, button2);
 }
 
 function thirdScene() {
@@ -50,10 +78,10 @@ function thirdScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  p.textContent= " Otis tar godiset och bär den med sig nöjt. När ni gått en bit kommer ni till en sjö, men hur ska ni ta er förbi den? ";
+  p.textContent= " Otis takes the candy and goes with you. After walking for a while you come to a lake, but how are you going to get past it? ";
   title.textContent =" titel 2";
-  button.textContent ="Simma över";
-  button2.textContent="Gå runt";
+  button.textContent ="Swim across";
+  button2.textContent="Walk around it";
   
   button.onclick= fourthScene;
   button2.onclick=seventhScene;
@@ -69,13 +97,12 @@ function middleScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  //p.textContent= "Vattnet är mörkt och kallt men efter en stunds simmande kommer ni över sjön. Där står en ekorre som blir livrädd när den får se er. När ekorren sedan flyr springer Otis efter. Vad gör du? ";
-  title.textContent =" hej";
-  //button.textContent ="Spring efter";
-  //button2.textContent="Väntar och hoppas han kommer tillbaka";
+  p.textContent= "Woops! Looks like Otis does'nt want to join you. Looks like you newwd to offer him some candy anyway.. ";
+  title.textContent =" ";
+  button.textContent ="Offer some candy";
+ 
   
-  button.onclick= fifthScene;
-  button2.onclick=seventhScene;
+  button.onclick= thirdScene;
   document.body.append(div,title, p, button, button2);
 
 }
@@ -89,10 +116,10 @@ function fourthScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  p.textContent= "Vattnet är mörkt och kallt men efter en stunds simmande kommer ni över sjön. Där står en ekorre som blir livrädd när den får se er. När ekorren sedan flyr springer Otis efter. Vad gör du? ";
+  p.textContent= " The water is dark and cold, but eventually you cross the lake. There is a squirrel standing there who is terrified when he sees you. When the squirrel then runs away, Otis runs after it. What do you do? ";
   title.textContent =" hej";
-  button.textContent ="Spring efter";
-  button2.textContent="Väntar och hoppas han kommer tillbaka";
+  button.textContent ="Run after them!";
+  button2.textContent="Wait and hope he comes back";
   
   button.onclick=fifthScene;
   button2.onclick=sixthScene;
@@ -109,9 +136,9 @@ function fifthScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  p.textContent= "Du springer och springer men hittar inte Otis. Till slut kommer du tillbaka till det magiska trädet igen, och ni får helt enkelt ";
+  p.textContent= "You run and run but can't find Otis. Finally, you see him under the magic tree again, and you simply get to ";
   title.textContent =" hej";
-  button.textContent ="Börja om";
+  button.textContent ="Start over";
   
   button.onclick= nextScene;
   document.body.append(div,title, p, button);
@@ -128,10 +155,10 @@ function sixthScene() {
   const div= document.createElement ("div");
   
 
-  p.textContent= " Efter en stund kommer otis tillbaka och ni går vidare. Och kommer till ett magiskt hus. Vad gör ni? ";
+  p.textContent= " After a while, Otis returns and you move on. After a while you see a magical house. What do you do? ";
   title.textContent =" hej";
-  button.textContent ="Går in";
-  button2.textContent="Går vidare";
+  button.textContent ="Walk in";
+  button2.textContent="Walk past the house";
   
   button.onclick=tenthScene;
   button2.onclick=ninthScene;
@@ -144,16 +171,16 @@ function seventhScene() {
   const title= document.createElement ("h1");
   const p = document.createElement("p");
   const button = document.createElement ("button");
-  const button2=document.createElement ("button");
+  
   const div= document.createElement ("div");
 
-  p.textContent= " När ni är halvvägs runt sjön står ett troll mitt i vägen. Han säger att han inte tänker släppa förbi er om ni inte ger honom något ";
+  p.textContent= " When you are halfway around the lake, a troll stands in the middle of the road. He says he's not going to let you pass if you don't give him something. ";
   title.textContent =" h";
-  button.textContent ="";
-  button2.textContent="";
+  button.textContent =" Give him Otis's candy";
+  
   
   button.onclick= eightScene;
-  document.body.append(div,title, p, button, button2);
+  document.body.append(div,title, p, button);
 
 }
 function eightScene() {
@@ -165,10 +192,10 @@ function eightScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  p.textContent= " Trollet släpper förbi er och ni har nu kommit förbi sjön. Längre fram ser ni ett magiskt hus. Vad gör ni?";
+  p.textContent= " The troll lets you pass and you have now passed the lake. Further ahead you see a magical house. What do you do?";
   title.textContent =" hej";
-  button.textContent ="Går in i huset";
-  button2.textContent="Går vidare";
+  button.textContent ="Walk in";
+  button2.textContent="Walk past the house";
   
   button.onclick=tenthScene;
   button2.onclick=ninthScene;
@@ -184,9 +211,9 @@ function ninthScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  p.textContent= " När ni gått runt huset ser ni den stora vägen som leder hem till tryggheten. Tack för att du hjälpte Otis komma hem! ";
+  p.textContent= " When you've walked around the house, you see the big road that leads home to safety. Thank you " +userName+ " for helping Otis come home! ";
   title.textContent =" hej";
-  button.textContent ="Börja om";
+  button.textContent ="play again?";
  
   
   button.onclick= startScene;
@@ -200,15 +227,15 @@ function tenthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
-  const div= document.createElement ("div");
+  //const div= document.createElement ("div");
 
-  p.textContent= " När ni kommer in i huset ser ni att det är fullt av guld och diamanter. Ni plockar på er så mycket ni kan innan ni hör ett ljud och får se ett argt troll. Nu finns det bara en sak att göra ";
+  p.textContent= " When you enter the house, you see that it is full of gold and diamonds. You pick up as much as you can before you hear a sound and see an angry troll. Now there is only one thing to do ";
   title.textContent =" hej";
-  button.textContent ="Spring";
+  button.textContent ="RUN!";
  
   
   button.onclick= eleventhScene;
-  document.body.append(div,title, p, button);
+  document.body.append(title, p, button);
 
 }
 
@@ -221,11 +248,10 @@ function eleventhScene() {
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
-  p.textContent= " Ni springer så snabbt ni kan och är äntligen ute ur trollskogen. Du hjälpte inte bara otis att komma hem, nu är ni rika också! ";
-  title.textContent =" Hej";
-  button.textContent ="Börja om?";
+  p.textContent= " You run as fast as you can and are finally out of the enchanted forest. Not only did you help Otis get home, now you're rich too! ";
+  title.textContent =" Good job "+ userName + "!!";
+  button.textContent ="start over?";
  
-  
   button.onclick=startScene;
   document.body.append(div,title, p, button);
 

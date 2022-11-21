@@ -11,14 +11,7 @@ p, h1, button{
     z-index: 10;
 }
 
-div {
-    width: 80%;
-   background-color: lightblue;
-    height: 15rem;
-    position: absolute;
-    border-radius: 5rem;
-    
-}
+
 
 button {
     width: 10rem;
@@ -27,4 +20,15 @@ button {
     border-radius: 3rem;
     border: none;
     margin-bottom: 1rem;
+}
+
+p {
+    padding: 3rem;
+    
+}
+
+.bakgrund {
+    background-color: orange;
+    width: 80%;
+    height: 30rem;
 }
