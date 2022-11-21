@@ -118,7 +118,7 @@ function fifthScene() {
   
   }
   
-  /** Second end scene */
+  /** End scene nr2 */
   
   function eleventhScene() {
     document.body.innerHTML=("");
