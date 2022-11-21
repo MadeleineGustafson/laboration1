@@ -11,8 +11,11 @@
 h2 {
     font-size: 4rem;
     text-align: center;
+    font-family: 'Chewy';
 }
-
+.font {
+    color:darkgoldenrod;
+}
 h1 {
     font-family: 'chewy';
     font-size: 5rem;
@@ -32,8 +35,10 @@ button {
 
 p {
     padding: 3rem;
-    color:grey;
+    color:white;
+    font-size: 25px;
     font-family: 'Varela round';
+    text-align:center
     
 }
 
@@ -42,6 +47,7 @@ input {
     height: 2rem;
     width: 10rem;
     border-radius: 3rem;
+    margin-bottom: 1rem;
 }
 
 div {

@@ -4,7 +4,6 @@ function fifthScene() {
   
     const p = document.createElement("p");
     const button = document.createElement ("button");
-    const button2=document.createElement ("button");
     document.body.style.background = "#8be68a";
   
     p.textContent= "You run and run but can't find Otis. Finally, you see him under the magic tree again, and you simply get to ";
@@ -24,9 +23,7 @@ function fifthScene() {
     const p = document.createElement("p");
     const button = document.createElement ("button");
     const button2=document.createElement ("button");
-    const div= document.createElement ("div");
     document.body.style.background = "#8be68a";
-    
   
     p.textContent= " After a while, Otis returns and you move on. After a while you see a magical house. What do you do? ";
     title.textContent =" 🛖✨";
@@ -44,12 +41,10 @@ function fifthScene() {
     document.body.innerHTML=("");
   
     const troll= document.createElement ("p");
-     troll.classList ="troll";
+    troll.classList ="troll";
     const p = document.createElement("p");
     const button = document.createElement ("button");
     
-    const div= document.createElement ("div");
-  
     p.textContent= " When you are halfway around the lake, a troll stands in the middle of the road. He says he's not going to let you pass if you don't give him something. ";
     troll.textContent ="🧌 ";
     button.textContent =" Give him Otis's candy";
@@ -68,7 +63,6 @@ function fifthScene() {
     const p = document.createElement("p");
     const button = document.createElement ("button");
     const button2=document.createElement ("button");
-    const div= document.createElement ("div");
     document.body.style.background = "#8be68a";
   
     p.textContent= " The troll lets you pass and you have now passed the lake. Further ahead you see a magical house. What do you do?";
@@ -82,15 +76,14 @@ function fifthScene() {
   
   }
   
-  /** First end scene */
+  /** End scene nr1 */
   function ninthScene() {
     document.body.innerHTML=("");
   
     const title= document.createElement ("h1");
     const p = document.createElement("p");
     const button = document.createElement ("button");
-    const button2=document.createElement ("button");
-    const div= document.createElement ("div");
+
     document.body.style.background = "#8be68a";
   
     p.textContent= " When you've walked around the house, you see the big road that leads home to safety. Thank you " +userName+ " for helping Otis come home! ";
@@ -110,8 +103,9 @@ function fifthScene() {
     const title= document.createElement ("h1");
     const p = document.createElement("p");
     const button = document.createElement ("button");
-    const button2=document.createElement ("button");
+
     document.body.style.background = "#dbc42c";
+    p.classList="font"
 
   
     p.textContent= " When you enter the house, you see that it is full of gold and diamonds. You pick up as much as you can before you hear a sound and see an angry troll. Now there is only one thing to do ";
@@ -132,12 +126,11 @@ function fifthScene() {
     const title2= document.createElement ("h2");
     const p = document.createElement("p");
     const button = document.createElement ("button");
-    const button2=document.createElement ("button");
-    const div= document.createElement ("div");
+    
     document.body.style.background = "#8be68a";
   
     p.textContent= " You run as fast as you can and are finally out of the enchanted forest. Not only did you help Otis get home, now you're rich too! ";
-    title.textContent =" Good job "+ userName + "!! 💎👑";
+    title2.textContent =" Good job "+ userName + "!! 💎👑";
     button.textContent ="Start over?";
    
     button.onclick=startScene;
