@@ -52,19 +52,19 @@ function welcomeScene() {
 function nextScene() {
   document.body.innerHTML=("");
 
-  const title= document.createElement ("h1");
+  const title2= document.createElement ("h2");
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
 
   p.textContent= " You find otis alone under a magic tree what do you do to get him to join you? ";
-  title.textContent =" hej";
-  button.textContent ="Offer candy";
+  title2.textContent="🌳✨"
+  button.textContent ="Offer candy 🍬";
   button2.textContent="Call on him";
   
   button.onclick= thirdScene;
   button2.onclick=middleScene;
-  document.body.append(title, p, button, button2);
+  document.body.append(title2, p, button, button2);
 }
 /**  Lake scene two options leads to diffrent paths */
 function thirdScene() {
@@ -77,7 +77,7 @@ function thirdScene() {
   const div= document.createElement ("div");
 
   p.textContent= " Otis takes the candy and goes with you. After walking for a while you come to a lake, but how are you going to get past it? ";
-  title.textContent =" titel 2";
+  title.textContent =" 🍬";
   button.textContent ="Swim across";
   button2.textContent="Walk around it";
   
@@ -97,9 +97,9 @@ function middleScene() {
   
   const div= document.createElement ("div");
 
-  p.textContent= "Woops! Looks like Otis does'nt want to join you. Looks like you newwd to offer him some candy anyway.. ";
-  title.textContent =" ";
-  button.textContent ="Offer some candy";
+  p.textContent= "Woops! Looks like Otis doesn't want to join you. Looks like you need to offer him some candy anyway.. ";
+  title.textContent ="";
+  button.textContent ="Offer some candy 🍬";
  
   
   button.onclick= thirdScene;
@@ -117,7 +117,7 @@ function fourthScene() {
   const div= document.createElement ("div");
 
   p.textContent= " The water is dark and cold, but eventually you cross the lake. There is a squirrel standing there who is terrified when he sees you. When the squirrel then runs away, Otis runs after it. What do you do? ";
-  title.textContent =" hej";
+  title.textContent =" 🐿";
   button.textContent ="Run after them!";
   button2.textContent="Wait and hope he comes back";
   
@@ -131,18 +131,16 @@ function fourthScene() {
 function fifthScene() {
   document.body.innerHTML=("");
 
-  const title= document.createElement ("h1");
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
   const div= document.createElement ("div");
 
   p.textContent= "You run and run but can't find Otis. Finally, you see him under the magic tree again, and you simply get to ";
-  title.textContent =" hej";
   button.textContent ="Start over";
   
   button.onclick= nextScene;
-  document.body.append(div,title, p, button);
+  document.body.append(div, p, button);
 
 }
 
@@ -159,7 +157,7 @@ function sixthScene() {
   
 
   p.textContent= " After a while, Otis returns and you move on. After a while you see a magical house. What do you do? ";
-  title.textContent =" hej";
+  title.textContent =" 🛖✨";
   button.textContent ="Walk in";
   button2.textContent="Walk past the house";
   
@@ -173,19 +171,20 @@ function sixthScene() {
 function seventhScene() {
   document.body.innerHTML=("");
 
-  const title= document.createElement ("h1");
+  const troll= document.createElement ("p");
+   troll.classList ="troll";
   const p = document.createElement("p");
   const button = document.createElement ("button");
   
   const div= document.createElement ("div");
 
   p.textContent= " When you are halfway around the lake, a troll stands in the middle of the road. He says he's not going to let you pass if you don't give him something. ";
-  title.textContent =" h";
+  troll.textContent ="🧌 ";
   button.textContent =" Give him Otis's candy";
   
   
   button.onclick= eightScene;
-  document.body.append(div,title, p, button);
+  document.body.append(div,troll, p, button);
 
 }
  /** Scene with two options that leads to two diffrent end scenes */
@@ -200,7 +199,7 @@ function eightScene() {
   const div= document.createElement ("div");
 
   p.textContent= " The troll lets you pass and you have now passed the lake. Further ahead you see a magical house. What do you do?";
-  title.textContent =" hej";
+  title.textContent =" 🛖✨";
   button.textContent ="Walk in";
   button2.textContent="Walk past the house";
   
@@ -221,7 +220,7 @@ function ninthScene() {
   const div= document.createElement ("div");
 
   p.textContent= " When you've walked around the house, you see the big road that leads home to safety. Thank you " +userName+ " for helping Otis come home! ";
-  title.textContent =" hej";
+  title.textContent =" You made it!";
   button.textContent ="play again?";
  
   
@@ -241,7 +240,7 @@ function tenthScene() {
   
 
   p.textContent= " When you enter the house, you see that it is full of gold and diamonds. You pick up as much as you can before you hear a sound and see an angry troll. Now there is only one thing to do ";
-  title.textContent =" hej";
+  title.textContent =" 👑💎";
   button.textContent ="RUN!";
  
   
@@ -262,8 +261,8 @@ function eleventhScene() {
   const div= document.createElement ("div");
 
   p.textContent= " You run as fast as you can and are finally out of the enchanted forest. Not only did you help Otis get home, now you're rich too! ";
-  title.textContent =" Good job "+ userName + "!!";
-  button.textContent ="start over?";
+  title.textContent =" Good job "+ userName + "!! 💎👑";
+  button.textContent ="Start over?";
  
   button.onclick=startScene;
   document.body.append(div,title, p, button);

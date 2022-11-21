@@ -3,13 +3,17 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
-    background-color: lightcoral;
+    margin-top: 5rem;
  }
 
 p, h1, button{
    position: relative;
     z-index: 10;
+}
+
+h2 {
+    font-size: 5rem;
+    
 }
 
 h1 {
@@ -42,4 +46,10 @@ div {
     width: 80%;
     height: 80%;
     background-color: lightgreen;
+}
+
+.troll {
+    font-size: 100px;
+    margin-bottom: -5rem;
+    margin-top: 2rem;
 }
