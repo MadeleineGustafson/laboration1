@@ -51,6 +51,7 @@ function welcomeScene() {
   document.body.append(title,p, button,);
 }
 
+/** Magic tree - two options */
 function nextScene() {
   document.body.innerHTML=("");
 
@@ -68,7 +69,7 @@ function nextScene() {
   button2.onclick=middleScene;
   document.body.append(title, p, button, button2);
 }
-
+/**  Lake scene two options leads to diffrent paths */
 function thirdScene() {
  document.body.innerHTML=("");
 
@@ -88,6 +89,8 @@ function thirdScene() {
   document.body.append(div,title, p, button, button2);
 }
 
+/** Scene that leads back to main path */
+
 function middleScene() {
   document.body.innerHTML=("");
 
@@ -106,7 +109,7 @@ function middleScene() {
   document.body.append(div,title, p, button, button2);
 
 }
-
+/** Swimming scene leas to two options */
 function fourthScene() {
   document.body.innerHTML=("");
 
@@ -127,6 +130,7 @@ function fourthScene() {
 
 }
 
+/** Scene leads back to beginning */
 function fifthScene() {
   document.body.innerHTML=("");
 
@@ -144,6 +148,8 @@ function fifthScene() {
   document.body.append(div,title, p, button);
 
 }
+
+/** Scene that leads to diffrent paths */
 
 function sixthScene() {
   document.body.innerHTML=("");
@@ -165,6 +171,8 @@ function sixthScene() {
   document.body.append(div,title, p, button, button2);
 
 }
+
+/** Troll scene with one option */
 function seventhScene() {
   document.body.innerHTML=("");
 
@@ -183,6 +191,8 @@ function seventhScene() {
   document.body.append(div,title, p, button);
 
 }
+ /** Scene with two options that leads to two diffrent end scenes */
+
 function eightScene() {
   document.body.innerHTML=("");
 
@@ -202,6 +212,8 @@ function eightScene() {
   document.body.append(div,title, p, button, button2);
 
 }
+
+/** First end scene */
 function ninthScene() {
   document.body.innerHTML=("");
 
@@ -220,6 +232,8 @@ function ninthScene() {
   document.body.append(div,title, p, button);
 
 }
+
+/** Second path leads to end scene nr 2 */
 function tenthScene() {
   document.body.innerHTML=("");
 
@@ -227,7 +241,7 @@ function tenthScene() {
   const p = document.createElement("p");
   const button = document.createElement ("button");
   const button2=document.createElement ("button");
-  //const div= document.createElement ("div");
+  
 
   p.textContent= " When you enter the house, you see that it is full of gold and diamonds. You pick up as much as you can before you hear a sound and see an angry troll. Now there is only one thing to do ";
   title.textContent =" hej";
@@ -238,6 +252,8 @@ function tenthScene() {
   document.body.append(title, p, button);
 
 }
+
+/** Second end scene */
 
 function eleventhScene() {
   document.body.innerHTML=("");
